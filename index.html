@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game | Gulshanoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div class="wrapper">
+    <form class="form-select">
+        <select name="" id="select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </form>
+    <main>
+        <p>Score: <span class="score" id="score">0</span></p>
+        <h1 class="word" id="word"></h1>
+        <input type="text" id="word-input" class="word-input" >
+        <p class="game-time heart">Time: <span id="time" class="time heart">10</span>s</p>
+    </main>
+    <footer>
+        <h3><a target="_blank" href="https://t.me/Fano_1906">Created by Gulshanoy 💕</a></h3>
+    </footer>
+ </div>
+
+    <div class="modal hidden">
+        <h1>Game Over</h1>
+        <h3>Score: <span id="lastScore">0</span></h3>
+        <button onclick="location.reload()">Again</button>
+    </div>
+    <div class="overflow hidden "></div>
+    <!--JS-->
+    <script src="app.js"></script>
+</body>
+</html>
